@@ -9,6 +9,8 @@ p {
 	font-size: 14px !important;
 }
 
+
+
 .center-element{
 	margin: auto;
 }
@@ -25,7 +27,47 @@ p {
 	font-size: 25px;
 }
 
+//footer
+
 .footer{
 	background-color: black;
-	height: 200px;
+	//height: 200px;
+
+	.footer-padding{
+		padding: 55px;
+	}
+
+	p,h1,h2,h3,h4,h5,h6,span {
+		color: #fff;
+	}
+
+	.left-info{
+		margin-top: 10px;
+	}
+
+	.right-info{
+		padding-left: 25px;
+	}
+}
+
+a.follow-user:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.follow-user:visited{
+	color: none;
+	text-decoration: none;
+}
+
+a.follow-user{
+	color: #fff;
+}
+
+.inline-block-style{
+	display: inline-block;
+}
+
+.email-address{
+	font-size:12px !important;
 }
