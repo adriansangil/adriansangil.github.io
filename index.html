@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 	</head>
 	<body>
 		<!-- <div class="text-center">
@@ -29,10 +30,17 @@
 						<br class="hidden-xs">
 						<br class="hidden-xs">
 						<br class="hidden-xs">
-						<div class="row">
+						<div class="row"><!-- 
 							<div class="col-sm-4 col-xs-12"><a href="" class="styled-links">HOME</a></div>
 							<div class="col-sm-4 col-xs-12"><a href="" class="styled-links">RESUME</a></div>
-							<div class="col-sm-4 col-xs-12"><a href="" class="styled-links">CONTACT</a></div>
+							<div class="col-sm-4 col-xs-12"><a href="" class="styled-links">CONTACT</a></div> -->
+							<ul class="nav nav-tabs" role="tablist" id="myTab">
+								<li role="presentation" class="active"><a href="#home-content" data-toggle="tab">Home</a></li>
+								<li role="presentation"><a href="#education-content" data-toggle="tab">Education</a></li>
+								<li role="presentation"><a href="#skills-content" data-toggle="tab">Skills</a></li>
+							  	<li role="presentation"><a href="#resume-content" data-toggle="tab">Resume</a></li>
+							  	<li role="presentation"><a href="#contact-content" data-toggle="tab">Contacts</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -42,15 +50,30 @@
 							<div class="custom-padding-top"></div>
 							<div class="row">
 								<div class="col-sm-6 col-xs-12 text-center">
-									<img src="images/under-construction.jpg" alt="" class="img-circle img-responsive center-element" width="300" height="300" alt="">
+									<img src="images/profile-pic.jpg" alt="" class="img-circle img-responsive center-element" width="250" height="250" alt="">
 								</div>
-								<div class="col-sm-6">
-									<span class="hello-statement"><strong>Hello,<br></strong></span>
-									<span class="secondary-statement">a bit about me:</span>
-									<p><br>
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-									</p>
+								<div class="col-sm-6 col-xs-12">
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane fade active in" id="home-content">
+											<span class="hello-statement"><strong>Hello,<br></strong></span>
+											<span class="secondary-statement">a bit about me:</span>
+											<p><br>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+											</p>
+										</div>
+										<div role="tabpanel" class="tab-pane fade" id="education-content">education</div>
+										<div role="tabpanel" class="tab-pane fade" id="skills-content">skills</div>
+									    <div role="tabpanel" class="tab-pane fade" id="resume-content">.2.</div>
+									    <div role="tabpanel" class="tab-pane fade" id="contact-content">.3.</div>
+									</div>
 								</div>
+									
+
+
+								 
+								<!--<div class="col-sm-6">
+										
+								</div> -->
 							</div>
 						</div>
 					</div>
@@ -63,7 +86,7 @@
 			<div class="container">
 				<div class="row footer-padding">
 					
-					<div class="col-sm-4 text-center hidden-xs">
+					<div class="col-md-4 text-center hidden-sm hidden-xs">
 						
 						<div class="pull-left">
 							<img src="images/email.png" alt="" class="">
@@ -76,7 +99,7 @@
 						
 					</div>
 					
-					<div class="col-sm-4 text-center hidden-xs">
+					<div class="col-md-4 text-center hidden-sm hidden-xs">
 						
 						<div>
 							<div class="pull-left">
@@ -94,7 +117,7 @@
 						
 					</div>
 
-					<div class="col-sm-4 text-center hidden-xs">
+					<div class="col-md-4 text-center hidden-sm hidden-xs">
 						<div class="pull-left">
 							<img src="images/copyright.png" alt="" class="">
 						</div>
@@ -106,17 +129,18 @@
 
 					<!-- visible in xs -->
 					
-					<div class="col-xs-12 visible-xs text-center">
+					<div class="col-sm-12 visible-sm visible-xs text-center">
 						<a class="follow-user" href="https://www.facebook.com/4DR14N.182"><img src="images/facebook-icon.png" alt="" class=" center-element" width="12px"></a> &nbsp;
 						<a class="follow-user" href="https://plus.google.com/u/0/+AdrianSangil"><img src="images/google-plus-icon.png" alt="" class=" center-element" width="12px"></a> &nbsp;
 						<a class="follow-user" href="https://www.linkedin.com/pub/adrian-sangil/9b/489/b53"><img src="images/linkedin-icon.png" alt="" class=" center-element" width="12px"></a> &nbsp;
 					</div>
-					<div class="col-xs-12 visible-xs text-center">
+					<div class="col-xs-12 visible-xs visible-sm text-center">
 						<a href="" class="follow-user email-address">adriansangil.github.io &copy; 2014</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="js/bootstrap.min.js"></script>
 		
 	</body>
 </html>
