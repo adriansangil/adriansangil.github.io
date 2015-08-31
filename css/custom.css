@@ -1,5 +1,5 @@
 html, body {
-	font-family: Arial;
+	font-family: 'Lato', serif;
 	height: 100%;
 	margin: 0px;
 }
@@ -43,6 +43,17 @@ body:before {
     transform: rotate(360deg);
 }
 
+/*alignment*/
+.flex-align {
+	display: flex;
+  	justify-content: center;
+  	padding-top: 8px;
+  	padding-bottom: 8px;
+}
+
+.flex-inner {
+	 align-self: center;
+}
 
 /*colors*/
 .custom-red {
@@ -64,5 +75,5 @@ body:before {
 /*text size*/
 
 .custom-large-txt {
-	font-size: 10em !important;
+	font-size: 7em !important;
 }
