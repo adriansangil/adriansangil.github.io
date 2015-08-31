@@ -1,0 +1,68 @@
+html, body {
+	font-family: Arial;
+	height: 100%;
+	margin: 0px;
+}
+
+.sticky-footer {
+	line-height: 1.6em;
+	position: relative;
+	margin-top: -150px;  negative value of footer height 
+	height: 150px;
+	clear:both;
+	background-color: #fff;
+	border-top: 1px solid #95a5a6;
+	color: #767676;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+
+} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+
+/*text-styles*/
+.general-description {
+	color: #95a5a6;
+	font-size: 1.5em;
+}
+
+
+
+/*flip animation*/
+.spin-icon:hover{
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+
+
+/*colors*/
+.custom-red {
+	color: #e74c3c;
+}
+
+.custom-blue {
+	color: #59BBFD;
+}
+
+.custom-dark-blue {
+	color: #2980b9;
+}
+
+.custom-midnight-blue {
+	color: #2c3e50;
+}
+
+/*text size*/
+
+.custom-large-txt {
+	font-size: 10em !important;
+}
