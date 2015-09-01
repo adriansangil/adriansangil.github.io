@@ -30,9 +30,13 @@ body:before {
 
 
 /*text-styles*/
+.greetings {
+	font-size: 1.4em;
+}
+
 .general-description {
 	color: #95a5a6;
-	font-size: 1.5em;
+	font-size: .9em;
 }
 
 
@@ -75,5 +79,5 @@ body:before {
 /*text size*/
 
 .custom-large-txt {
-	font-size: 7em !important;
+	font-size: 6em !important;
 }
