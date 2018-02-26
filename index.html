@@ -57,15 +57,15 @@
             	<div class="col-md-6 col-sm-12 col-xs-12">
             		<div class="row flex-align">
 		            		<i class="fa fa-commenting-o custom-large-txt motto-animation"></i>
-		            		<h2 class="about-me-title">Wise Words</h2>
-		            		<p class="general-description">"The expert in anything was once a beginner."</p>
+		            		<h2 class="about-me-title">{{aboutMe[0].title}}</h2>
+		            		<p class="general-description">{{aboutMe[0].description}}</p>
 		            </div>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12">
 		        	<div class="row flex-align">
 		            		<i class="fa fa-dribbble custom-large-txt hobby-animation"></i>
-		            		<h2 class="about-me-title">Hobbies</h2>
-		            		<p class="general-description">Playing the guitar, reading manga, sleeping and eating.</p>
+		            		<h2 class="about-me-title">{{aboutMe[1].title}}</h2>
+		            		<p class="general-description">{{aboutMe[1].description}}</p>
 		            </div>
             	</div>
             </div>
@@ -75,17 +75,17 @@
             	<div class="col-md-6 col-sm-12 col-xs-12">
             		<div class="row flex-align">
 		            		<i class="fa fa-desktop custom-large-txt desktop-animation"></i>
-		            		<h2 class="about-me-title">Web Developer</h2>
-		            		<p class="general-description">I create web pages and web-based systems based on the client.</p>
+		            		<h2 class="about-me-title">{{aboutMe[2].title}}</h2>
+		            		<p class="general-description">{{aboutMe[2].description}}</p>
 		            		<a class="btn btn-primary uppercase" href="" target="_blank">Projects Under Construction</a>
 		            </div>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12">
 		            <div class="row flex-align">
 		            		<i class="fa fa-gamepad custom-large-txt game-animation"></i>
-		            		<h2 class="about-me-title">Gamer</h2>
-		            		<p class="general-description">Gamers don't die, We respawn</p>
-		            		<a class="btn btn-primary uppercase" href="" target="_blank">Add me on Steam</a>
+		            		<h2 class="about-me-title">{{aboutMe[3].title}}</h2>
+		            		<p class="general-description">{{aboutMe[3].description}}</p>
+		            		<a class="btn btn-primary uppercase" href={{aboutMe[3].gameLink}} target="_blank">{{aboutMe[3].gameMessage}}</a>
 		            </div>
             	</div>
             </div>
