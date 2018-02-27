@@ -1,7 +1,7 @@
 app.controller('AboutMeController', ['$scope', function($scope) { 
   $scope.greetings1 = "Hello,";
   $scope.greetings2 = "a bit about me:";
-  $scope.summary = "I am a software engineer with 2+ years of experience in web and software development. I am highly familiar with the technologies and wide variety of tools used for web development. I also possess a Bachelor Degree in Information Technology Major in Database Systems."
+  $scope.summary = "I am a software engineer with 2+ years of experience in web and software development. I am highly familiar with the technologies and wide variety of tools used for web development. Regarding my education, I possess a Bachelor Degree in Information Technology Major in Database Systems."
 
   let myInfo = [];
 

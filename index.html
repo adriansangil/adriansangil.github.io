@@ -63,7 +63,8 @@
             		<div class="row flex-align">
 		            		<i class="fa fa-commenting-o custom-large-txt motto-animation"></i>
 		            		<h2 class="about-me-title">{{aboutMe[0].title}}</h2>
-		            		<p class="general-description">{{aboutMe[0].description}}</p>
+		            			<p class="general-description">"{{aboutMe[0].description}}"</p>
+								<footer><cite title="Source Title">- Helen Hayes</cite></footer>
 		            </div>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12">
@@ -82,7 +83,7 @@
 		            		<i class="fa fa-desktop custom-large-txt desktop-animation"></i>
 		            		<h2 class="about-me-title">{{aboutMe[2].title}}</h2>
 		            		<p class="general-description">{{aboutMe[2].description}}</p>
-		            		<a class="btn btn-primary uppercase" href="" target="_blank">Projects Under Construction</a>
+		            		<a class="btn btn-primary uppercase page-scroll" href="#projects" target="">Projects Section</a>
 		            </div>
 		        </div>
 		        <div class="col-md-6 col-sm-12 col-xs-12">
@@ -165,7 +166,7 @@
             <div class="text-left" ng-repeat="p in projects">
             	<a href="{{p.url}}"><h3><strong>{{p.name}}</strong></h3></a>
             	<p class="project-description">{{p.description}}<br /></p>
-            	<span class="job-length">Tech: <small>{{p.tags}}</small></span>
+            	<span class="job-length"><small><em><strong>Technologies used:</strong></em> {{p.tags}}</small></span>
             	<div class="custom-padding">
             </div>	
             </div>
