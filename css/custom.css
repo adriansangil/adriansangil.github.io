@@ -44,7 +44,7 @@ body:before {
 
 .general-description {
 	color: #777d7d;
-	font-size: .9em;
+	font-size: 1.2em;
 }
 
 /*alignment*/
@@ -210,7 +210,7 @@ body:before {
 }
 
 .custom-padding {
-	padding: 1.25em;
+	padding: 0.9em;
 }
 
 .project-description {
