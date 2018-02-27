@@ -28,14 +28,14 @@ of those sections to manage the look and feel of the site. */
 
 .white-section {
     min-height: 100%;
-    padding-top: 125px;
+    padding-top: 75px;
     text-align: center;
     background: #fff;
 }
 
 .dark-section {
     min-height: 100%;
-    padding-top: 125px;
+    padding-top: 75px;
     text-align: center;
     background: #eee;
 }

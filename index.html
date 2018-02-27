@@ -49,8 +49,12 @@
             <div class="row greeting-container">
                 <div class="col-lg-12">
                     <h1><strong>{{greetings1}}</strong></h1>
-                    <span class="greetings">{{greetings2}}</span>                   
+                    <span class="greetings">{{greetings2}}</span>
+                    <p></p>           
                 </div>
+                <div class="col-lg-12">
+                <p>{{summary}}</p>
+            	</div>
             </div>
 
             <!-- first row about me -->
@@ -95,11 +99,23 @@
 
 	<!-- Experience Section -->
     <section id="experience" class="dark-section">
-        <div class="container custom-container">
+        <div class="container custom-container" ng-controller="ExperienceController">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Experience Section</h1>
+                    <h2>{{header}}</h2>
                 </div>
+            </div>
+            <div class="text-left" ng-repeat="xp in experience">
+            	<h4><strong>{{xp.company}}</strong></h4>
+            	<span>{{xp.jobTitle}}<br /></span>
+            	<span class="job-length">{{xp.jobLength}}</span>
+            	<address class="job-address">{{xp.location}}</address>
+            	<ul>
+            		<li ng-repeat="r in xp.responsibilities">{{r}}</li>
+            	</ul>
+
+            	<span>Technologies used: {{xp.tech}}</span>
+            	<p><br></p>
             </div>
         </div>
     </section>
@@ -118,7 +134,7 @@
     
 
     <!-- Projects Section -->
-    <section id="projects" class="white-section">
+    <section id="projects" class="dark-section">
         <div class="container custom-container">
             <div class="row">
                 <div class="col-lg-12">
@@ -129,7 +145,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="dark-section">
+    <section id="education" class="white-section">
         <div class="container custom-container">
             <div class="row">
                 <div class="col-lg-12">
@@ -179,5 +195,6 @@
 	<!-- controllers -->
 	<script src="js/controllers/MainController.js"></script>
 	<script src="js/controllers/AboutMeController.js"></script>
+	<script src="js/controllers/ExperienceController.js"></script>
 </body>
 </html>
