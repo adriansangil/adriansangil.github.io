@@ -204,3 +204,11 @@ body:before {
 .custom-medium-txt {
 	font-size: 2.5em !important;
 }
+
+#skills span {
+	font-size:  1.25em;
+}
+
+.custom-padding {
+	padding: 1.25em;
+}

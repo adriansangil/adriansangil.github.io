@@ -41,7 +41,7 @@
 	        </div>
         </div>
 	</nav>
-	<section id="intro" class="white-section">
+	<section id="intro" class="main-section">
         <div class="container custom-container" ng-controller="AboutMeController">
         	<div class="row">
         		<img src="images/profile-pic.jpg" alt="..." class="img-circle" width="250px">
@@ -105,6 +105,8 @@
                     <h2>{{header}}</h2>
                 </div>
             </div>
+            <div class="custom-padding">
+            </div>
             <div class="text-left" ng-repeat="xp in experience">
             	<h4><strong>{{xp.company}}</strong></h4>
             	<span>{{xp.jobTitle}}<br /></span>
@@ -122,11 +124,28 @@
     
     <!-- Skills Section -->
     <section id="skills" class="white-section">
-        <div class="container custom-container">
+        <div class="container custom-container" ng-controller="SkillsController">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Skills Section</h1>
+                    <h2>{{header}}</h2>
                 </div>
+            </div>
+            <div class="custom-padding">
+            </div>
+            <div class="text-left">
+            <span><em><strong>Web Development:</strong></em>{{skills.web}}<br></span>
+            <div>
+            	<p>&nbsp;</p>
+            </div>
+            <span><em><strong>Languages:</strong></em>{{skills.lang}}<br></span>
+            <div>
+            	<p>&nbsp;</p>
+            </div>
+            <span><em><strong>Mobile:</strong></em>{{skills.mobile}}<br></span>
+            <div>
+            	<p>&nbsp;</p>
+            </div>
+            <span><em><strong>Others:</strong></em>{{skills.others}}<br></span>
             </div>
         </div>
     </section>
@@ -138,7 +157,7 @@
         <div class="container custom-container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Projects Section</h1>
+                    <h2>Projects Section</h2>
                 </div>
             </div>
         </div>
@@ -146,25 +165,25 @@
 
     <!-- Education Section -->
     <section id="education" class="white-section">
-        <div class="container custom-container">
+        <div class="container custom-container" ng-controller="EducationController">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Education</h2>
+                    <h2>{{header}}</h2>
                 </div>
             </div>
-            
-        </div>
-       	<div class="container custom-container">
-       		<div class="row">
+            <div class="custom-padding">
+            </div>
+            <div class="row">
         		<img src="images/msu-iit-logo.png" alt="..." class="img-circle" width="100px">
        		</div>
-       	</div>
-        <div>
-        	<h3><strong>Mindanao State University - Iligan Institute of Technology</strong></h3>
-        	<span>Bachelor of Science in Information Technology - Major in Database Management System </span>
-        	<p><br></p>
-        	<p>Activities and Societies: ICCF, Software Freedom Day, ICT Youth Convention</p>
+	        <div>
+	        	<h3><strong>{{education.school}}</strong></h3>
+	        	<span>{{education.degree}}</span>
+	        	<p><br></p>
+	        	<p>{{education.activities}}</p>
+	        </div>
         </div>
+       		
     </section>
 
     
@@ -208,5 +227,7 @@
 	<script src="js/controllers/MainController.js"></script>
 	<script src="js/controllers/AboutMeController.js"></script>
 	<script src="js/controllers/ExperienceController.js"></script>
+	<script src="js/controllers/EducationController.js"></script>
+	<script src="js/controllers/SkillsController.js"></script>
 </body>
 </html>
