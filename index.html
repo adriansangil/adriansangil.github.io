@@ -133,19 +133,19 @@
             <div class="custom-padding">
             </div>
             <div class="text-left">
-            <span><em><strong>Web Development:</strong></em>{{skills.web}}<br></span>
-            <div>
-            	<p>&nbsp;</p>
-            </div>
-            <span><em><strong>Languages:</strong></em>{{skills.lang}}<br></span>
-            <div>
-            	<p>&nbsp;</p>
-            </div>
-            <span><em><strong>Mobile:</strong></em>{{skills.mobile}}<br></span>
-            <div>
-            	<p>&nbsp;</p>
-            </div>
-            <span><em><strong>Others:</strong></em>{{skills.others}}<br></span>
+	            <span><em><strong>Web Development:</strong></em></span><span class="skill-list">{{skills.web}}<br></span>
+	            <div>
+	            	<p>&nbsp;</p>
+	            </div>
+	            <span><em><strong>Languages:</strong></em></span><span class="skill-list">{{skills.lang}}<br></span>
+	            <div>
+	            	<p>&nbsp;</p>
+	            </div>
+	            <span><em><strong>Mobile:</strong></em></span><span class="skill-list">{{skills.mobile}}<br></span>
+	            <div>
+	            	<p>&nbsp;</p>
+	            </div>
+	            <span><em><strong>Others:</strong></em></span><span class="skill-list">{{skills.others}}<br></span>
             </div>
         </div>
     </section>
@@ -154,11 +154,20 @@
 
     <!-- Projects Section -->
     <section id="projects" class="dark-section">
-        <div class="container custom-container">
+        <div class="container custom-container" ng-controller="ProjectsController">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Projects Section</h2>
+                    <h2>{{header}}</h2>
                 </div>
+            </div>
+            <div class="custom-padding">
+            </div>
+            <div class="text-left" ng-repeat="p in projects">
+            	<a href="{{p.url}}"><h3><strong>{{p.name}}</strong></h3></a>
+            	<p class="project-description">{{p.description}}<br /></p>
+            	<span class="job-length">Tech: <small>{{p.tags}}</small></span>
+            	<div class="custom-padding">
+            </div>	
             </div>
         </div>
     </section>
@@ -229,5 +238,6 @@
 	<script src="js/controllers/ExperienceController.js"></script>
 	<script src="js/controllers/EducationController.js"></script>
 	<script src="js/controllers/SkillsController.js"></script>
+	<script src="js/controllers/ProjectsController.js"></script>
 </body>
 </html>

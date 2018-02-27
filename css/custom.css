@@ -212,3 +212,12 @@ body:before {
 .custom-padding {
 	padding: 1.25em;
 }
+
+.project-description {
+	font-size: 1.25em;
+	color: #777d7d;
+}
+
+.skill-list {
+	color: #777d7d;
+}
