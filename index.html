@@ -199,7 +199,7 @@
     
 
 
-	<div class="sticky-footer">
+	<div class="sticky-footer " ng-controller="FooterController">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 hidden-sm hidden-xs">
@@ -220,7 +220,7 @@
 			
 			
 			<div class="row">	
-				<span>adriansangil.github.io &copy; 2017</span>
+				<span>adriansangil.github.io &copy; {{footerDate}}</span>
 			</div>
 		</div>
 			
@@ -240,5 +240,6 @@
 	<script src="js/controllers/EducationController.js"></script>
 	<script src="js/controllers/SkillsController.js"></script>
 	<script src="js/controllers/ProjectsController.js"></script>
+	<script src="js/controllers/FooterController.js"></script>
 </body>
 </html>
