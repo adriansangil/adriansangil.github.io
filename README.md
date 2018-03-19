@@ -5,7 +5,7 @@ A web page hosted on github showing a summary regarding my skills and experience
 ## Built With
 
 * [Twitter Bootstrap 3](http://getbootstrap.com/docs/3.3/) - The web framework used
-* [AngularJS](https://angularjs.org/) - Dependency Management
+* [AngularJS](https://angularjs.org/) - Javascript Framework
 
 
 ## Authors
